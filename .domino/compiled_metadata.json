@@ -399,13 +399,19 @@
             "properties": {
                 "input_path": {
                     "default": "/home/shared_storage/input_data/InputSolargisFile.docx",
-                    "description": "The path to input meteo data files",
+                    "description": "The path to input meteo data files (supports wildcards: *.docx, *.csv, or directory paths)",
                     "title": "Path to input data files",
+                    "type": "string"
+                },
+                "input_filetype": {
+                    "default": "csv",
+                    "description": "The type of input file: 'docx' for Word documents or 'csv' for CSV files",
+                    "title": "Input file type",
                     "type": "string"
                 },
                 "output_path": {
                     "default": "/home/shared_storage/data/raw_solargis.csv",
-                    "description": "The path to output meteo data file",
+                    "description": "The path to raw Solargis data file",
                     "title": "Path to output data file",
                     "type": "string"
                 }
